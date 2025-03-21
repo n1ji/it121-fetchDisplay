@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #303e44;
+    animation: colorchange 10s infinite;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #218838;
+}
+
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.product-container {
+    flex: 1 1 30%;
+    margin: 10px;
+    padding: 15px;
+    background: #f9f9f9;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.product-container img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.product-container h2 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.product-container p {
+    margin: 10px 0;
+    font-size: 13px;
+}
+
+a {
+    color: #F9564F;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    padding: 20px 0;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Background Color Cycling */
+@keyframes colorchange {
+    0%   {background: #303e44;}
+    16.6%  {background: #2f3144;}
+    33.2%  {background: #392f44;}
+    49.8%  {background: #442f42;}
+    66.4%  {background: #2f443c;}
+    83%  {background: #293837;}
+    100% {background: #303e44;}
+}
+
+@-webkit-keyframes colorchange {
+    0%   {background: #303e44;}
+    16.6%  {background: #2f3144;}
+    33.2%  {background: #392f44;}
+    49.8%  {background: #442f42;}
+    66.4%  {background: #2f443c;}
+    83%  {background: #293837;}
+    100% {background: #303e44;}
+}
